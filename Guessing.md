@@ -29,8 +29,9 @@ flowchart TD
     T -- Retry --> R
     S -- guess_3 > rnum --> U["Too high, Game Over!"]
     S -- guess_3 == rnum --> V["Correct! Well Done!"]
-    S -- guess_3 < rnum --> W["Too low, Game Over!"]
-    U & V & W --> X("End Program")
+    S -- guess_3 < rnum --> W[Output: "Too low, Game Over!"]
+    U & V & W --> X[Output: "Correct Number Was rnum"]
+    X --> Y("End Program")
 
 ```
 
@@ -64,7 +65,7 @@ The program goes through multiple steps during the process of determining if the
 
 * If guess_1 is correct, the program ends after _"Correct! Well Done"_ output is displayed.
 * If guess_2 is correct, the program ends after _"Correct! Well Done"_ output is displayed.
-* No matter the outcome of guess_3 the program will output one of the three options (_"Too High, Game Over!", "Correct! Well Done!", or, "Too Low, Game Over!_) and then end and will need to be re-started. 
+* No matter the outcome of guess_3 the program will output one of the three options (_"Too High, Game Over!", "Correct! Well Done!", or, "Too Low, Game Over!_), then it will output the correct number, and then program will end and will need to be re-started. 
 
 
 
