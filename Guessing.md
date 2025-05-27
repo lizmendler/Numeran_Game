@@ -31,7 +31,7 @@ flowchart TD
     S -- guess_3 > rnum --> U["Too high, Game Over!"]
     S -- guess_3 == rnum --> V["Correct! Well Done!"]
     S -- guess_3 < rnum --> W["Too low, Game Over!"]
-    U & V & W --> X["Correct Number Was rnum"]
+    U & V & W --> X["The correct number was rnum."]
     X --> Y("End Program")
 
 ```
