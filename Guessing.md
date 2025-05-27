@@ -12,7 +12,7 @@ flowchart TD
     F -- Retry --> D
     E -- guess_1 > rnum --> G{"Output: Too high, 2 tries left"}
     E -- guess_1 == rnum --> H{"Output: Correct! Well Done!"}
-    E -- guess_1 < rnum --> I{"Output: Too high, 2 tries left!"}
+    E -- guess_1 < rnum --> I{"Output: Too low, 2 tries left!"}
     G --> K{"Computer requests new input = guess_2"}
     I --> K
     K -- Input is numeric and between 1-100 --> L{"Valid Input"}
