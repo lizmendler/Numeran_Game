@@ -29,8 +29,8 @@ flowchart TD
     T -- Retry --> R
     S -- guess_3 > rnum --> U["Too high, Game Over!"]
     S -- guess_3 == rnum --> V["Correct! Well Done!"]
-    S -- guess_3 < rnum --> W[Output: "Too low, Game Over!"]
-    U & V & W --> X[Output: "Correct Number Was rnum"]
+    S -- guess_3 < rnum --> W["Too low, Game Over!"]
+    U & V & W --> X["Correct Number Was rnum"]
     X --> Y("End Program")
 
 ```
