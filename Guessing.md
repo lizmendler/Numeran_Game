@@ -27,9 +27,9 @@ flowchart TD
     R -- Input is numeric and between 1-100 --> S{"Valid Input"}
     R -- Input is not numeric or between 1-100 --> T{"Invalid Entry, Retry"}
     T -- Retry --> R
-    S -- guess_2 > rnum --> U["Too high, Game Over!"]
-    S -- guess_2 == rnum --> V["Correct! Well Done!"]
-    S -- guess_2 < rnum --> W["Too low, Game Over!"]
+    S -- guess_3 > rnum --> U["Too high, Game Over!"]
+    S -- guess_3 == rnum --> V["Correct! Well Done!"]
+    S -- guess_3 < rnum --> W["Too low, Game Over!"]
     U & V & W --> X("End Program")
 
 ```
@@ -47,17 +47,17 @@ The program goes through three steps during the process of determining if the us
    b. If the input is not a number or not between 1-100, then validation fails and the computer requests a new input
    c. If the input is a number between 1-100 the program proceeds to the next step.
 
-2. Comparison of Correctness
+3. Comparison of Correctness
    a. The user input is compared to the random number generated (=rnum).
    b. If the user input guess_1 is greater than rnum then the computer output is _"Too High, 2 tries left!"_
    c. If the user input guess_1 is less than rnum then the computer output is _"Too Low, 2 tries left!"_
    d. If the user input guess_1 is equal to rnum then the computer output is _"Correct! Well Done!"_
 
-3. Game Proceeds
+4. Game Proceeds
    a. If the initial guess_1 was either too high or too low, the computer then requests a new input (guess_2) and goes through the program again starting at guess validation process.
    b. If guess_2 was also either too high or too low, the computer will output _"Too High/Low, 1 try left!"_ and will then ask for another input (guess_3).
 
-4. The game ends if the following conditions are met:
+5. The game ends if the following conditions are met:
    a. If guess_1 is correct, the program ends after _"Correct! Well Done"_ output is displayed.
    b. If guess_2 is correct, the program ends after _"Correct! Well Done"_ output is displayed.
    c. No matter the outcome of guess_3 the program will end and will need to be re-started. 
