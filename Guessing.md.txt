@@ -2,6 +2,8 @@
 
 ```mermaid
 
+%%{init: {'theme':'forest'}}%%
+
 flowchart TD
     A("Start") --> B["Computer Generates Random Number = rnum"]
     B --> C["Computer Requests user input that is numerical between 1-100"]
@@ -35,3 +37,4 @@ flowchart TD
     W --> X
 
 ```
+
