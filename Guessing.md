@@ -3,6 +3,7 @@
 ```mermaid
 
 flowchart TD
+
     A("Start") --> B["Computer generates random number = rnum"]
     B --> C["Computer requests user input that is numerical between 1-100"]
     C --> D["User inputs number = guess_1"]
