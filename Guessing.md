@@ -64,7 +64,7 @@ The program goes through multiple steps during the process of determining if the
 
 * If guess_1 is correct, the program ends after _"Correct! Well Done"_ output is displayed.
 * If guess_2 is correct, the program ends after _"Correct! Well Done"_ output is displayed.
-* No matter the outcome of guess_3 the program will end and will need to be re-started. 
+* No matter the outcome of guess_3 the program will output one of the three options (_"Too High, Game Over!", "Correct! Well Done!", or, "Too Low, Game Over!_) and then end and will need to be re-started. 
 
 
 
